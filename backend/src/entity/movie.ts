@@ -17,7 +17,7 @@ export class Movie {
   @Column()
   director: string;
 
-  @Column()
+  @Column("float")
   imdb_rating: number;
 
   @Column()

@@ -5,6 +5,9 @@ export const HeaderStyled = styled.header`
   display: flex;
   align-items: center;
   border-bottom: 1px solid #d8d5ca;
+  position: sticky;
+  top: 0;
+  background-color: #eae7dc;
 `;
 
 export const Sitename = styled.h1`

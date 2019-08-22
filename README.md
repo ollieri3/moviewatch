@@ -10,7 +10,7 @@ Moviewatch App typescript challenge
 docker-compose up
 ```
 
-Head on over to [localhost:3000](http://localhost:3000) to view the GraphQL IDE (Schema explorer)
+Head on over to [localhost:5000](http://localhost:5000) to view the GraphQL IDE (Schema explorer)
 
 2. Bring up the Frontend development server:
 

@@ -1,6 +1,6 @@
 # Moviewatch 🎥
 
-Moviewatch App typescript challenge
+Moviewatch App typescript challenge, using React, Apollo and Typescript, You'll build an app to let you keep track of the movies you'd like to watch.
 
 ## Installation:
 
@@ -21,8 +21,6 @@ cd frontend && npm install && npm start
 1. Convert the Movies component to Typescript! 
 Head to `frontend/screens/Movies/index.js` and convert to a `.tsx` Typescript component. 
 
-    **Tip**: Try using a Typescript Interface to descibe the Movie object.
-
     **Tip**: Use the GraphQL Schema documentation at [localhost:5000](http://localhost:5000) to help write the interface for a movie!
 
     **Tip**: [Using Apollo With Typescript](https://www.apollographql.com/docs/react/recipes/static-typing/)
@@ -31,8 +29,6 @@ Head to `frontend/screens/Movies/index.js` and convert to a `.tsx` Typescript co
 Head to `frontend/screens/Movies/components/MovieCard.js` and convert to a `.tsx` Typescript component. 
 
 3. In the Movies screen component, create a mutation which adds a movie to your watch list when clicked. Don't forget to type your mutation!, Use the [schema documentation](http://localhost:5000)
-
-    **Tip**: Use the GraphQL Schema documentation at localhost:5000 to help write the interface for a movie!
     
     **Tip**: [Apollo useMutation hook](https://www.apollographql.com/docs/react/essentials/mutations/#the-usemutation-hook)
 

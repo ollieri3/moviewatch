@@ -5,8 +5,11 @@ export const GET_MOVIES = gql`
     movies {
       id
       title
+      director
       year
       thumbnail
+      runTime
+      imdbRating
     }
   }
 `;

@@ -1,13 +1,40 @@
 import React from "react";
 
-import { IMovie } from "../..";
-import { MovieCardStyled } from "./styles";
+import {
+  MovieCardStyled,
+  MoviePosterWrapper,
+  PosterOverlay,
+  MovieTitle,
+  MovieInfoContainer,
+  Director,
+  Rating
+} from "./styles";
 
-const MovieCard = ({ movie }) => {
+const MovieCard = ({ movie, onMovieClick }) => {
   return (
     <MovieCardStyled>
-      <img src={movie.thumbnail} alt={`poster for ${movie.title}`} />
-      <p>{movie.title}</p>
+      <MoviePosterWrapper>
+        <img src={movie.thumbnail} alt={`poster for ${movie.title}`} />
+        <PosterOverlay onClick={() => onMovieClick(movie)}>
+          <p>Watch</p>
+        </PosterOverlay>
+      </MoviePosterWrapper>
+      <MovieInfoContainer>
+        <MovieTitle>{movie.title}</MovieTitle>
+        <Director>{movie.director}</Director>
+        <Rating>
+          <span role="img" aria-label="movie rating">
+            ⭐
+          </span>
+          {movie.imdbRating}
+        </Rating>
+        <p>
+          <span role="img" aria-label="movie duration">
+            🕐
+          </span>
+          {movie.runTime}
+        </p>
+      </MovieInfoContainer>
     </MovieCardStyled>
   );
 };

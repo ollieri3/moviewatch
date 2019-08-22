@@ -8,6 +8,8 @@ export const HeaderStyled = styled.header`
   position: sticky;
   top: 0;
   background-color: #eae7dc;
+  z-index: 1;
+  margin-bottom: 2rem;
 `;
 
 export const Sitename = styled.h1`

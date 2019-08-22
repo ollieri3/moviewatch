@@ -6,14 +6,22 @@ import { MoviesPage } from "./styles";
 import MovieCard from "./components/MovieCard";
 
 const Movies = () => {
-  const { loading, data } = useQuery < IMovieData > GET_MOVIES;
+  const { loading, data } = useQuery(GET_MOVIES);
+
+  const handleMovieClick = movie => {};
 
   if (loading) return <p>loading</p>;
 
   return (
     <MoviesPage>
       {data &&
-        data.movies.map(movie => <MovieCard key={movie.id} movie={movie} />)}
+        data.movies.map(movie => (
+          <MovieCard
+            key={movie.id}
+            movie={movie}
+            onMovieClick={handleMovieClick}
+          />
+        ))}
     </MoviesPage>
   );
 };

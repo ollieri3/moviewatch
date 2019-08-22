@@ -10,6 +10,7 @@ export const GET_MOVIES = gql`
       thumbnail
       runTime
       imdbRating
+      description
     }
   }
 `;

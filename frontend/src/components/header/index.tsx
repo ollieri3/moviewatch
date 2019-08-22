@@ -1,14 +1,18 @@
 import React from "react";
 import { HeaderStyled, Sitename, NavigationStyled } from "./styles";
 
-const Header: React.FC = () => {
+interface IHeaderProps {
+  onWatchListClick: () => void;
+}
+
+const Header: React.FC<IHeaderProps> = ({ onWatchListClick }) => {
   return (
     <HeaderStyled>
-      <Sitename>Movie Watch</Sitename>
+      <Sitename>moviewatch</Sitename>
       <NavigationStyled>
         <ul>
           <li>
-            <button>Watch list</button>
+            <button onClick={onWatchListClick}>watch list</button>
           </li>
         </ul>
       </NavigationStyled>

@@ -18,20 +18,28 @@ cd frontend && npm install && npm start
 
 ## Challenges:
 
-1. Convert the Movies component to Typescript! 
-Head to `frontend/screens/Movies/index.js` and convert to a `.tsx` Typescript component. 
+1. Begin by using the `useQuery` Apollo hook to make a new GraphQL query to retrieve all the movies, display the movies within the `Movies` Screen component. You can place your query within `models/movies/queries.ts`
 
-    **Tip**: Use the GraphQL Schema documentation at [localhost:5000](http://localhost:5000) to help write the interface for a movie!
+   **Tip:** Use the GraphQL Schema documentation at [localhost:5000](http://localhost:5000) to help construct your query
 
-    **Tip**: [Using Apollo With Typescript](https://www.apollographql.com/docs/react/recipes/static-typing/)
+   **Tip:** [Writing a query](https://www.apollographql.com/docs/react/essentials/queries/#executing-a-query)
 
-2. Convert the MovieCard component to Typescript! 
-Head to `frontend/screens/Movies/components/MovieCard.js` and convert to a `.tsx` Typescript component. 
+1. Now try converting the `Movies` component to Typescript!
+   Head to `frontend/screens/Movies/index.js` and convert to a `.tsx` Typescript component.
 
-3. In the Movies screen component, create a mutation which adds a movie to your watch list when clicked. Don't forget to type your mutation!, Use the [schema documentation](http://localhost:5000)
-    
-    **Tip**: [Apollo useMutation hook](https://www.apollographql.com/docs/react/essentials/mutations/#the-usemutation-hook)
+   **Tip**: Use the GraphQL Schema documentation at [localhost:5000](http://localhost:5000) to help write the interface for a movie!
 
-4. Within the `WatchList` component write a query to retrieve all the movies in your watch list. You can use the `WatchListItem` component to render your movies!
+   **Tip**: [Using Apollo With Typescript](https://www.apollographql.com/docs/react/recipes/static-typing/)
 
-5. Estimate your binge! Within the footer area of the WatchList component, create a new component that displays the total run time of all the films in your watch list.
+1. Convert the `MovieCard` component to Typescript!
+   Head to `frontend/screens/Movies/components/MovieCard.js` and convert to a `.tsx` Typescript component.
+
+1. In the `Movies` component, create a mutation which adds a movie to your watch list when clicked. Don't forget to type your mutation!
+
+   **Tip**: Use the [schema documentation](http://localhost:5000)
+
+   **Tip**: [Apollo useMutation hook](https://www.apollographql.com/docs/react/essentials/mutations/#the-usemutation-hook)
+
+1. Within the `WatchList` component write a query to retrieve all the movies in your watch list. You can use the `WatchListItem` component to render the movies you're watching!
+
+1. Estimate your binge! Within the footer area of the WatchList component, create a new component that displays the total run time of all the films in your watch list.

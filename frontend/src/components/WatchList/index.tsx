@@ -1,6 +1,12 @@
 import React from "react";
 import { useTransition } from "react-spring";
-import { WatchListSideBar, WatchListFooter } from "./styles";
+import {
+  WatchListSideBar,
+  WatchListHeader,
+  WatchListItems,
+  WatchListFooter,
+  CloseButton
+} from "./styles";
 
 interface IWatchListProps {
   isOpen: boolean;
@@ -21,7 +27,10 @@ const WatchList: React.FC<IWatchListProps> = ({ isOpen, onWatchListClose }) => {
         ({ item, key, props }) =>
           item && (
             <WatchListSideBar key={key} style={props}>
-              <button onClick={onWatchListClose}>close</button>
+              <WatchListHeader>
+                <CloseButton onClick={onWatchListClose}>close</CloseButton>
+              </WatchListHeader>
+              <WatchListItems>{/* Watch movies go here */}</WatchListItems>
               <WatchListFooter>{/* Footer */}</WatchListFooter>
             </WatchListSideBar>
           )

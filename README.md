@@ -7,7 +7,7 @@ Moviewatch App typescript challenge, using React, Apollo and Typescript, You'll 
 1. Bring up the API and Database:
 
 ```BASH
-docker-compose up
+cd backend && npm install && docker-compose up
 ```
 
 2. Bring up the Frontend development server:

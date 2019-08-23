@@ -43,3 +43,7 @@ cd frontend && npm install && npm start
 1. Within the `WatchList` component write a query to retrieve all the movies in your watch list. You can use the `WatchListItem` component to render the movies you're watching!
 
 1. Estimate your binge! Within the footer area of the WatchList component, create a new component that displays the total run time of all the films in your watch list.
+
+1. You should now have a couple different queries/mutations in the `/models` directory, try running `cd frontend && npm run schema:update` to automatically generate Typescript interfaces for your queries and mutations.
+
+1. Refactor your components to remove your handwritten types and use the auto generated Typescript types instead.
